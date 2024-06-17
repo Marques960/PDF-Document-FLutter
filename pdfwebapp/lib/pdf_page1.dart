@@ -1,7 +1,16 @@
+//ignorances
+// ignore_for_file: depend_on_referenced_packages 
+// ignore_for_file: unused_local_variable
+// ignore_for_file: prefer_const_constructors
+// ignore_for_file: camel_case_types
+// ignore_for_file: prefer_const_declarations
+// ignore_for_file:
+// ignore_for_file:
+// ignore_for_file:
+// ignore_for_file:
 
 
-// ignore_for_file: depend_on_referenced_packages, prefer_const_constructors, camel_case_types, prefer_const_declarations
-
+//imports
 import 'package:flutter/material.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:printing/printing.dart';
@@ -18,15 +27,20 @@ class _pdfpageState extends State<Pdfpage> {
 
   // Method for printing the PDF
   Future<void> _printPdf() async {
+    // screen dimensions
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     final pdf = pw.Document();
     pdf.addPage(
       pw.Page(
+        pageFormat: PdfPageFormat.a4,
         build: (pw.Context context) {
           return pw.Center(
             child: pw.Container(
-              width: 600,
-              height: 400,
-              color: PdfColor.fromInt(0),
+              width: (screenWidth),
+              height: screenHeight,
+              //color: PdfColor.fromInt(0xFFFFFFFF),
+              color: PdfColor.fromHex("#FFFF00"),
               child: pw.Center(
                 child: pw.Column(
                   children: [

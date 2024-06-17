@@ -1,16 +1,10 @@
-# pdfwebapp
+Requirements on pubspec.yaml
+ # create pdf document
+  pdf: ^3.6.4
+  # save pdf in local storage
+  path_provider: ^2.1.2
 
-A new Flutter project.
+  #open pdf document
+  open_file: ^3.3.2
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  printing: ^5.9.0

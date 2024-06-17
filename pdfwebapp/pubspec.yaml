@@ -15,7 +15,17 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
+
+  # create pdf document
   pdf: ^3.6.4
+  # save pdf in local storage
+  path_provider: ^2.1.2
+
+  #open pdf document
+  open_file: ^3.3.2
+
   printing: ^5.9.0
+
+
 flutter:
   uses-material-design: true
