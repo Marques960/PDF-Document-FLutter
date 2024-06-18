@@ -14,9 +14,7 @@
 import 'package:flutter/material.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:printing/printing.dart';
-
 import 'package:pdf/pdf.dart';
-import 'package:pdf_render/pdf_render_widgets.dart';
 
 class Pdfpage extends StatefulWidget {
   const Pdfpage({super.key});
@@ -41,8 +39,7 @@ class _pdfpageState extends State<Pdfpage> {
             child: pw.Container(
               width: (screenWidth),
               height: screenHeight,
-              //color: PdfColor.fromInt(0xFFFFFFFF),
-              color: PdfColor.fromHex("#FFFF00"),
+              color : PdfColor.fromHex("#E0E0E0"),
               child: pw.Center(
                 child: pw.Column(
                   children: [
@@ -96,7 +93,7 @@ class _pdfpageState extends State<Pdfpage> {
             FloatingActionButton(
             onPressed: _printPdf,
             tooltip: 'Print',
-            child: const Icon(Icons.print),
+            child: const Icon(Icons.picture_as_pdf),
           ),
           ],
         ),

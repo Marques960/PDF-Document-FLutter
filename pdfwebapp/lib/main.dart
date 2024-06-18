@@ -11,7 +11,6 @@
 
 //imports
 import 'package:flutter/material.dart';
-import 'package:pdfwebapp/pdf_package.dart';
 import 'package:pdfwebapp/pdf_page1.dart';
 
 
@@ -31,7 +30,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const choose(),
+      home: const Pdfpage(),
     );
   }
 }
